@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--<link href="/css/index.css" rel="stylesheet"/>-->
+    <script type="text/javascript" src="/js/jquery-2.0.3.min.js"></script>
+    <script src="http://192.168.1.103:3000/socket.io/socket.io.js"></script>
+    <script defer async type="text/javascript" src="/js/index.js"></script>
+  </head>
+  <body>
+ <script type="application/javascript">
+       function getip(json) {
+        info = json.ip;
+          socket.emit('ipinfo', info);
+       }
+ </script>
+
+<script type="application/javascript" src="http://jsonip.appspot.com/?callback=getip">  </script>
+estas dentro
+  </body>
+
+</html>
