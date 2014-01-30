@@ -55,9 +55,7 @@ io.set('log level', 1);
 			 }
 		});
 
-	function updateIps(fecha){
-		console.log(visitas)
-		
+	function updateIps(fecha){		
 		db.collection('visitas').update({fecha: fecha}, {$set: {unicas: publicIps.length, impresiones:visitas}}, {w:1}, function(err) {
                                 if (err) console.warn(err.message);
                         });
