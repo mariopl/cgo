@@ -30,6 +30,7 @@ io.set('log level', 1);
 		visitas++
 
 		socket.on('ipinfo', function(info){
+			console.log('ip recibida');
 
 			var today = new Date();
 			var dd = today.getDate();
