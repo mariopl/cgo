@@ -600,7 +600,7 @@ footer .aligncenter {
   background: #000;
   border-bottom: 1px solid #797a80;
 }
-#cssmenu > ul > li:last-child {http://localhost:3000/1eso.html
+#cssmenu > ul > li:last-child {http://192.168.1.103:3000/1eso.html
   border-bottom: 1px solid #3e3d3c;
 }
 #cssmenu > ul > li > a {
@@ -667,3 +667,26 @@ footer .aligncenter {
 #cssmenu ul ul li:last-child {
   border: none;
 }
+
+#contenedor-mains
+{
+
+width:900px;
+text-align: center;
+margin: 0 auto;
+
+}
+#contenedor-mains div
+{
+float:left;
+border:2px solid #008cc4;
+border-radius: 25px;
+background:#fff;
+width:120px;
+line-height: 40px;
+margin:25px;
+box-shadow: 10px 10px 5px #888888;
+
+}
+
+
