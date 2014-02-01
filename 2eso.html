@@ -53,22 +53,39 @@
  </div>
 </header>
 <div id="contenedor-mains">
-  <div><a href="javascript:void(0);" type="button" onclick="window.open('http://www.youtube.com/v/DnzuKKG6-AA&autoplay=1', 'popup', 'left=390, top=200, width=425, height=344, toolbar=0, resizable=1')">Contenido 1</div>
-  <div><a href="javascript:void(0);" type="button" onclick="window.open('http://www.youtube.com/watch?v=wuLAtrI4K4Q', 'popup', 'left=390, top=200, width=425, height=344, toolbar=0, resizable=1')">Contenido 2</div>
-  <div>Contenido 3</div>
-  <div>Contenido 4</div>
-  <div>Contenido 5</div>
-  <div>Contenido 6</div>
-  <div>Contenido 7</div>
-  <div>Contenido 8</div>
-  <div>Contenido 9</div>
-  <div>Contenido 10</div>
-  <div>Contenido 11</div>
-  <div>Contenido 12</div>
-  <div>Contenido 13</div>
-  <div >Contenido 14</div>
+  <h4>SELECCIONA EL TEMA...</h4>
+  <div><h5>Los números naturales</h5></div>
+  <div><h5>Potencias y raíces</h5></div>
+  <div><h5>Divisibilidad</h5></div>
+  <div><h5>Los números enteros</h5></div>
+  <div><h5>Los números decimales</h5></div>
+  <div><h5>El sistema métrico decimal</h5></div>
+  <div><h5>Las fracciones</h5></div>
+  <div><h5>Operaciones con fracciones</h5></div>
+  <div><h5>Proorcionalidad y porcentajes</h5></div>
+  <div><h5>Álgebra</h5></div>
+  <div><h5>Rectas y ángulos</h5></div>
+  <div><h5>Figuras geométricas</h5></div>
+  <div><h5>Áreas y perímetros</h5></div>
+  <div ><h5><a href="#" class="m1"  onclick="mostrar(), ocultar()">Tablas y gráficas</a></h5></div>
+  <script type="text/javascript">
+function ocultar(){
+document.getElementById('contenedor-mains').style.display = 'none';}
+</script>
 
 </div>
+<div id='tema1' style='display:none;'>
+<div id="subcontenedor-mains">
+  <h4>LA CLASE ESTÁ A PUNTO DE COMENZAR...</h4>
+  <div><h5>Coordenadas cartesianas</div>
+  <div><h5>Información mediante puntos</div>
+  <div><h5>Interpretación de gráficas</div>
+  <div><h5>Distribuciones estadísticas</div>
+  <div><h5>Parámetros estadísticos</div>
+  <div><h5>Gráficos estadísticos</div>
+</div>
+</div>
+
 
 
 
@@ -92,15 +109,12 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery.dropdown.js"></script>
 <script type="text/javascript">
-
-$( function() {
-  
-  $( '#cd-dropdown' ).dropdown( {
-    gutter : 5
-  } );
-
-});
-
+function ocultar(){
+document.getElementById('contenedor-mains').style.display = 'none';}
+</script>
+<script type="text/javascript">
+function mostrar(){
+document.getElementById('tema1').style.display = 'block';}
 </script>
 </body>
 </html>

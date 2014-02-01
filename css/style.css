@@ -671,7 +671,7 @@ footer .aligncenter {
 #contenedor-mains
 {
 
-width:900px;
+width:950px;
 text-align: center;
 margin: 0 auto;
 
@@ -682,11 +682,49 @@ float:left;
 border:2px solid #008cc4;
 border-radius: 25px;
 background:#fff;
-width:120px;
-line-height: 40px;
-margin:25px;
+width:200px;
+height: 60px;
+/*line-height: 20px;*/
+margin:10px;
 box-shadow: 10px 10px 5px #888888;
 
+
+padding:15px 0;
+        font-size: 18px;
+ }
+
+#contenedor-mains div:hover {
+	background: #FBF2EF;
+}
+
+#subcontenedor-mains
+{
+
+width:700px;
+text-align: center;
+margin: 0 auto;
+}
+
+#subcontenedor-mains h4
+{
+	text-align: center;
+
+
+}
+#subcontenedor-mains div
+{
+float:left;
+border:2px solid #008cc4;
+border-radius: 25px;
+background:#fff;
+width:150px;
+line-height: 25px;
+margin:25px;
+box-shadow: 10px 10px 5px #888888;
+}
+
+#subcontenedor-mains div:hover {
+	background: #FBF2EF;
 }
 
 
