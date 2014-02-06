@@ -700,7 +700,7 @@ padding:15px 0;
 #subcontenedor-mains
 {
 
-width:700px;
+width:1000px;
 text-align: center;
 margin: 0 auto;
 }
@@ -717,10 +717,15 @@ float:left;
 border:2px solid #008cc4;
 border-radius: 25px;
 background:#fff;
-width:150px;
-line-height: 25px;
-margin:25px;
+width:220px;
+height: 60px;
+/*line-height: 20px;*/
+margin:10px;
 box-shadow: 10px 10px 5px #888888;
+
+
+padding:15px 0;
+        font-size: 18px;
 }
 
 #subcontenedor-mains div:hover {

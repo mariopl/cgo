@@ -1,10 +1,9 @@
 
-document.querySelector('#endpoint').addEventListener ('click', function () {
 
-	alert('Tu endpoint es: ');
+// $("a.youtube").YouTubePopup({ autoplay: 1, draggable: true });
 
+$(function () {
+    $("a.youtube").YouTubePopup(options);
 });
 
-$("a.youtube").YouTubePopup({ autoplay: 1, draggable: true });
-
-
+$("#youtubeLink").YouTubePopup({ youtubeId: '4eYSpIz2FjU', title: 'My New Title' });

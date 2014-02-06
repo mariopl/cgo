@@ -2,6 +2,17 @@
 <html lang="en">
 <head>
   <title>Profesor Online | SECUNDARIA</title>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <link type="text/css"
+        href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/redmond/jquery-ui.css" rel="stylesheet" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="jquery.youtubepopup.min.js"></script>
+<script type="text/javascript">
+function big_yt(yt_container,url)
+{
+document.getElementById(yt_container).innerHTML='<div style="position: absolute; left: 50px; top: 100px; right: 50px; bottom: 80px"><div style="position: relative; float: right; cursor: pointer" onclick="document.getElementById(\''+yt_container+'\').innerHTML=\'\'">CLOSE<\/div><br><iframe src="'+url+'" style="position: absolute; width: 100%; height: 100%" frameborder="0"><\/iframe><\/div>'
+}
+</script>
   <meta charset="utf-8">
   <meta name="description" content="Place your description here">
   <meta name="keywords" content="put, your, keyword, here">
@@ -53,30 +64,34 @@
 <div id="share"><a href="https://twitter.com/share" class="twitter-share-button" data-url="http://aulaprende.com" data-lang="es">Twittear</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script><iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Faulaprende.com&amp;width&amp;layout=button&amp;action=recommend&amp;show_faces=false&amp;share=true&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe></div>
 <div id="contenedor-mains">
-  <h4>SELECCIONA EL TEMA...</h4>
-  <div><h5>Fracciones y decimales</h5></div>
-  <div><h5>Potencias y raíces. Números aproximados</h5></div>
-  <div><h5>Progresiones</h5></div>
-  <div><h5>El lenguaje algebraico</h5></div>
-  <div><h5>Ecuaciones</h5></div>
-  <div><h5>Sistemas de ecuaciones</h5></div>
-  <div><h5>Funciones y gráficas</h5></div>
-  <div><h5>Funciones lineales</h5></div>
-  <div><h5>Problemas métricos en el plano</h5></div>
-  <div><h5>Cuerpos geométricos</h5></div>
-  <div><h5>Transformaciones geométricas</h5></div>
-  <div><h5>Estadística</h5></div>
-  <div><h5>Azar y probabilidad</h5></div>
-  <div ><h5><a href="#" onclick="mostrar(), ocultar()">Tablas y gráficas</a></h5></div>
-  <script type="text/javascript">
-function ocultar(){
-document.getElementById('contenedor-mains').style.display = 'none';}
-</script>
+  <h4>TEMARIO 3ºESO</h4>
+  <div><h5><a href="#" onclick="mostrar('tema1'), ocultar()">Fracciones y decimales</a></h5></div>
+  <div><h5><a href="#" onclick="mostrar('tema2'), ocultar()">Potencias y raíces. Números aproximados</a></h5></div>
+  <div><h5><a href="#" onclick="mostrar('tema3'), ocultar()">Progresiones</a></h5></div>
+  <div><h5><a href="#" onclick="mostrar('tema4'), ocultar()">El lenguaje algebraico</a></h5></div>
+  <div><h5><a href="#" onclick="mostrar('tema5'), ocultar()">Ecuaciones</a></h5></div>
+  <div><h5><a href="#" onclick="mostrar('tema6'), ocultar()">Sistemas de ecuaciones</a></h5></div>
+  <div><h5><a href="#" onclick="mostrar('tema7'), ocultar()">Funciones y gráficas</a></h5></div>
+  <div><h5><a href="#" onclick="mostrar('tema8'), ocultar()">Funciones lineales</a></h5></div>
+  <div><h5><a href="#" onclick="mostrar('tema9'), ocultar()">Problemas métricos en el plano</a></h5></div>
+  <div><h5><a href="#" onclick="mostrar('tema10'), ocultar()">Cuerpos geométricos</a></h5></div>
+  <div><h5><a href="#" onclick="mostrar('tema11'), ocultar()">Transformaciones geométricas</a></h5></div>
+  <div><h5><a href="#" onclick="mostrar('tema12'), ocultar()">Estadística</a></h5></div>
+  <div><h5><a href="#" onclick="mostrar('tema13'), ocultar()">Azar y probabilidad</a></h5></div>
+
+
+ 
 
 </div>
 <div id='tema1' style='display:none;'>
 <div id="subcontenedor-mains">
-  <h4>LA CLASE ESTÁ A PUNTO DE COMENZAR...</h4>
+  <div style="text-align: center">
+<a onclick="big_yt('video_container','http://www.youtube.com/v/TjLCJKoot4U?version=3&amp;autoplay=1')"><img src="http://img.youtube.com/vi/TjLCJKoot4U/1.jpg" title="Cougar Scene" alt="" style="cursor: pointer"></a> 
+ 
+
+</div>
+<div id="video_container"></div>
+  <h4>FRACCIONES Y DECIMALES</h4>
   <div><h5>Números racionales</div>
   <div><h5>Operaciones con fracciones</div>
   <div><h5>La fracción como operador</div>
@@ -87,7 +102,7 @@ document.getElementById('contenedor-mains').style.display = 'none';}
 
 <div id='tema2' style='display:none;'>
 <div id="subcontenedor-mains">
-  <h4>LA CLASE ESTÁ A PUNTO DE COMENZAR...</h4>
+  <h4>POTENCIAS Y RAÍCES. NÚMEROS APROXIMADOS</h4>
   <div><h5>Potenciación</div>
   <div><h5>Raíces exactas</div>
   <div><h5>Aproximaciones y errores</div>
@@ -97,7 +112,7 @@ document.getElementById('contenedor-mains').style.display = 'none';}
 
 <div id='tema3' style='display:none;'>
 <div id="subcontenedor-mains">
-  <h4>LA CLASE ESTÁ A PUNTO DE COMENZAR...</h4>
+  <h4>PROGRESIONES</h4>
   <div><h5>Sucesiones</div>
   <div><h5>Progesiones aritméticas</div>
   <div><h5>Progresiones geométricas</div>
@@ -106,7 +121,7 @@ document.getElementById('contenedor-mains').style.display = 'none';}
 
 <div id='tema4' style='display:none;'>
 <div id="subcontenedor-mains">
-  <h4>LA CLASE ESTÁ A PUNTO DE COMENZAR...</h4>
+  <h4>EL LENGUAJE ALGEBRAICO</h4>
   <div><h5>Expresiones algebraicas</div>
   <div><h5>Monomios</div>
   <div><h5>Polinomios</div>
@@ -116,28 +131,29 @@ document.getElementById('contenedor-mains').style.display = 'none';}
 
 <div id='tema5' style='display:none;'>
 <div id="subcontenedor-mains">
-  <h4>LA CLASE ESTÁ A PUNTO DE COMENZAR...</h4>
+  <h4>ECUACIONES</h4>
   <div><h5>Ecuaciones. Solución de una ecuación</div>
   <div><h5>Ecuaciones de primer grado</div>
   <div><h5>Ecuaciones de segundo grado</div>
-  <div><h5>Resolución de problemas con ecuaciones</div>
+  <div><h5>Resolución de problemas</div>
   </div>
 </div>
 
+
 <div id='tema6' style='display:none;'>
 <div id="subcontenedor-mains">
-  <h4>LA CLASE ESTÁ A PUNTO DE COMENZAR...</h4>
+  <h4>SISTEMAS DE ECUACIONES</h4>
   <div><h5>Ecuaciones con dos incógnitas. Soluciones</div>
   <div><h5>Sistemas de ecuaciones</div>
   <div><h5>Número de soluciones de un sistema lineal</div>
-  <div><h5>Resolución de sistemas/div>
-  <div><h5>Resolución de problemas mediante sistemas</div>
+  <div><h5>Resolución de sistemas</div>
+  <div><h5>Resolución de problemas</div>
   </div>
 </div>
 
 <div id='tema7' style='display:none;'>
 <div id="subcontenedor-mains">
-  <h4>LA CLASE ESTÁ A PUNTO DE COMENZAR...</h4>
+  <h4>FUNCIONES Y GRÁFICAS</h4>
   <div><h5>Las funciones y sus gráficas</div>
   <div><h5>Variaciones de una función</div>
   <div><h5>Tendencias de una función</div>
@@ -148,7 +164,7 @@ document.getElementById('contenedor-mains').style.display = 'none';}
 
 <div id='tema8' style='display:none;'>
 <div id="subcontenedor-mains">
-  <h4>LA CLASE ESTÁ A PUNTO DE COMENZAR...</h4>
+  <h4>FUNCIONES LINEALES</h4>
   <div><h5>Función de proporcionalidad y=mx</div>
   <div><h5>Recta de la se conoce un punto y la pendiente</div>
   <div><h5>Ecuación de la recta que pasa por dos puntos</div>
@@ -160,7 +176,7 @@ document.getElementById('contenedor-mains').style.display = 'none';}
 
 <div id='tema9' style='display:none;'>
 <div id="subcontenedor-mains">
-  <h4>LA CLASE ESTÁ A PUNTO DE COMENZAR...</h4>
+  <h4>PROBLEMAS MÉTRICOS EN EL PLANO</h4>
   <div><h5>Teorema de Pitágoras. Aplicaciones</div>
   <div><h5>Lugares geométricos</div>
   <div><h5>Las cónicas como lugares geométricos</div>
@@ -171,8 +187,8 @@ document.getElementById('contenedor-mains').style.display = 'none';}
 
 <div id='tema10' style='display:none;'>
 <div id="subcontenedor-mains">
-  <h4>LA CLASE ESTÁ A PUNTO DE COMENZAR...</h4>
-  <div><h5>Poliedros regulares(sólidos platónicos)</div>
+  <h4>CUERPOS GEOMÉTRICOS</h4>
+  <div><h5>Poliedros regulares</div>
   <div><h5>Poliedros semirregulares</div>
   <div><h5>Superficie de los cuerpos geométricos</div>
   <div><h5>Medida del volumen de los cuerpos geométricos</div>
@@ -182,7 +198,7 @@ document.getElementById('contenedor-mains').style.display = 'none';}
 
 <div id='tema11' style='display:none;'>
 <div id="subcontenedor-mains">
-  <h4>LA CLASE ESTÁ A PUNTO DE COMENZAR...</h4>
+  <h4>TRANSFORMACIONES GEOMÉTRICAS</h4>
   <div><h5>Movimientos en el plano</div>
   <div><h5>Estudio de las traslaciones</div>
   <div><h5>Estudio de los giros</div>
@@ -193,7 +209,7 @@ document.getElementById('contenedor-mains').style.display = 'none';}
 
 <div id='tema12' style='display:none;'>
 <div id="subcontenedor-mains">
-  <h4>LA CLASE ESTÁ A PUNTO DE COMENZAR...</h4>
+  <h4>ESTADÍSTICA</h4>
   <div><h5>Población y muestra</div>
   <div><h5>Variables estadísticas</div>
   <div><h5>Confección de una tabla de frecuencias</div>
@@ -206,7 +222,7 @@ document.getElementById('contenedor-mains').style.display = 'none';}
 
 <div id='tema13' style='display:none;'>
 <div id="subcontenedor-mains">
-  <h4>LA CLASE ESTÁ A PUNTO DE COMENZAR...</h4>
+  <h4>AZAR Y PROBABILIDAD</h4>
   <div><h5>Sucesos aleatorios</div>
   <div><h5>Probabilidad de un suceso</div>
   <div><h5>Ley de Laplace para experiencias regulares</div>
@@ -248,8 +264,8 @@ function ocultar(){
 document.getElementById('contenedor-mains').style.display = 'none';}
 </script>
 <script type="text/javascript">
-function mostrar(){
-document.getElementById('tema14').style.display = 'block';}
+function mostrar(tema){
+document.getElementById(tema).style.display = 'block';}
 </script>
 </body>
 </html>
