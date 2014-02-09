@@ -53,21 +53,21 @@
 
 
 <div id="contenedor-mains">
-  <h4>SELECCIONA EL TEMA...</h4>
-  <div><h5>Los números naturales</h5></div>
-  <div><h5>Potencias y raíces</h5></div>
-  <div><h5>Divisibilidad</h5></div>
-  <div><h5>Los números enteros</h5></div>
-  <div><h5>Los números decimales</h5></div>
-  <div><h5>El sistema métrico decimal</h5></div>
-  <div><h5>Las fracciones</h5></div>
-  <div><h5>Operaciones con fracciones</h5></div>
-  <div><h5>Proporcionalidad y porcentajes</h5></div>
-  <div><h5>Álgebra</h5></div>
-  <div><h5>Rectas y ángulos</h5></div>
-  <div><h5>Figuras geométricas</h5></div>
-  <div><h5>Áreas y perímetros</h5></div>
-  <div ><h5><a href="#" onclick="mostrar(), ocultar()">Tablas y gráficas</a></h5></div>
+  <h4>TEMARIO 1ºESO</h4>
+  <div><a href="#" onclick="mostrar('tema1'), ocultar()">Los números naturales</a></div>
+  <div><a href="#" onclick="mostrar('tema2'), ocultar()">Potencias y raíces</a></div>
+  <div><a href="#" onclick="mostrar('tema3'), ocultar()">Divisibilidad</a></div>
+  <div><a href="#" onclick="mostrar('tema3'), ocultar()">Los números enteros</a></div>
+  <div><a href="#" onclick="mostrar('tema4'), ocultar()">Los números decimales</a></div>
+  <div><a href="#" onclick="mostrar('tema5'), ocultar()">El sistema métrico decimal</a></div>
+  <div><a href="#" onclick="mostrar('tema6'), ocultar()">Las fracciones</a></div>
+  <div><a href="#" onclick="mostrar('tema7'), ocultar()">Operaciones con fracciones</a></div>
+  <div><a href="#" onclick="mostrar('tema8'), ocultar()">Proporcionalidad y porcentajes</a></div>
+  <div><a href="#" onclick="mostrar('tema9'), ocultar()">Álgebra</a></div>
+  <div><a href="#" onclick="mostrar('tema10'), ocultar()">Rectas y ángulos</a></div>
+  <div><a href="#" onclick="mostrar('tema11'), ocultar()">Figuras geométricas</a></div>
+  <div><a href="#" onclick="mostrar('tema12'), ocultar()">Áreas y perímetros</a></div>
+  <div><a href="#" onclick="mostrar('tema13'), ocultar()">Tablas y gráficas</a></div>
   <script type="text/javascript">
 function ocultar(){
 document.getElementById('contenedor-mains').style.display = 'none';}
@@ -77,32 +77,32 @@ document.getElementById('contenedor-mains').style.display = 'none';}
 
 <div id='tema1' style='display:none;'>
 <div id="subcontenedor-mains">
-  <h4>LA CLASE ESTÁ A PUNTO DE COMENZAR...</h4>
-  <div><h5>Origen y evolución de los números</div>
-  <div><h5>Aproximación de números naturales por redondeo</div>
-  <div><h5>Operaciones con números naturales</div>
+  <h4>LOS NÚMEROS NATURALES</h4>
+  <div>CLASE 1: Sistema de numeración egipcio, romano y decimal<br><iframe id="ytplayer" type="text/html" width="220" height="168.75"
+src="https://www.youtube.com/embed/7o2KsjP6Ki8?&showinfo=0"
+frameborder="0" allowfullscreen></iframe></div>
+  <div>CLASE 2: Aproximación de números naturales por redondeo<br><iframe id="ytplayer" type="text/html" width="220" height="168.75"
+src="https://www.youtube.com/embed/ufeFTw4WYnI?&showinfo=0"
+frameborder="0" allowfullscreen></iframe></div>
+<div>CLASE 3: Operaciones con números naturales<br><br><iframe id="ytplayer" type="text/html" width="220" height="168.75"
+src="https://www.youtube.com/embed/5P0fFs3n6tQ?&showinfo=0"
+frameborder="0" allowfullscreen></iframe></div>
+
   </div>
 </div>
 
 <div id='tema2' style='display:none;'>
 <div id="subcontenedor-mains">
   <h4>LA CLASE ESTÁ A PUNTO DE COMENZAR...</h4>
-  <div><h5>Potencias</div>
-  <div><h5>Potencias de base 10. Aplicaciones</div>
-  <div><h5>Raíz cuadrada</div>
+  <br>
+  <h5>Estamos trabajando</h5>
   </div>
 </div>
 
 <div id='tema3' style='display:none;'>
 <div id="subcontenedor-mains">
   <h4>LA CLASE ESTÁ A PUNTO DE COMENZAR...</h4>
-  <div><h5>La relación de divisibilidad</div>
-  <div><h5>Múñtiplos de un número</div>
-  <div><h5>Divisores de un número</div>
-  <div><h5>Criterios de divisibilida</div>
-  <div><h5>Números primos y compuestos</div>
-  <div><h5>Mínimo común múltiplo de dos números</div>
-  <div><h5>Máximo común divisor de dos números</div>
+  <h5>En breve estarán las clases</h5>
   </div>
 </div>
 
@@ -228,24 +228,13 @@ document.getElementById('contenedor-mains').style.display = 'none';}
 </div>
 </footer>
 <script type="text/javascript"> Cufon.now(); </script>
-<script type='text/javascript'>
-var imageID=0;
-function changeimage(every_seconds){
-    //change the image
-    if(!imageID){
-      document.getElementById("myimage").src="images/foto2.png";
-      imageID++;
-    }
-    else{if(imageID==1){
-      document.getElementById("myimage").src="images/foto3.png";
-      imageID++;
-    }else{if(imageID==2){
-      document.getElementById("myimage").src="images/foto2.png";
-      imageID=0;
-    }}}
-    //call same function again for x of seconds
-    setTimeout("changeimage("+every_seconds+")",((every_seconds)*1000));
-  }
-  </script>
+<script type="text/javascript">
+function ocultar(){
+document.getElementById('contenedor-mains').style.display = 'none';}
+</script>
+<script type="text/javascript">
+function mostrar(tema){
+document.getElementById(tema).style.display = 'block';}
+</script>
 </body>
 </html>
